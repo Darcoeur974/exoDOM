@@ -1,0 +1,98 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+main {
+    background-color: lightsalmon;
+    height: 100vh;
+    padding: 25px;
+}
+
+section {
+    background-color: lightblue;
+    padding: 15px;
+    margin: 5px;
+}
+
+#affichage {
+    display: flex;
+    flex-flow: row;
+}
+
+#affichage p {
+    padding-bottom: 5px;
+}
+
+.miseEnPlace button {
+    margin-top: 15px;
+}
+
+.block {
+    background-color: red;
+}
+
+#bouttonSupression {
+    width: 100%;
+    height: auto;
+}
+
+.espace {
+    background-color: lightcoral;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+}
+
+.boutton_choix {
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.boutton_choix:hover {
+    width: 50px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+table {
+    border: 1px red black;
+}
+
+td,
+tr {
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    padding-right: 3px;
+    padding-left: 3px;
+    padding-top: 3px;
+}
+
+td input {
+    display: none;
+}
+
+td input:hover {
+    display: none;
+}
+
+.check {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    background-color: red;
+}
+
+.check:hover {
+    display: inline-block;
+    background-color: red;
+}

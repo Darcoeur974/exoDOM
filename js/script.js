@@ -33,27 +33,20 @@ function creation_table() {
     informationPlace = document.createElement("p");
     informationReservation = document.createElement("p");
 
-    // CREATION D'UN BOUTTON POUR SUPPRIMER UN TABLEAU
-
-    /*
-    let boutton = document.createElement("button");
-    boutton.id = "bouttonSupression"
-    boutton.innerHTML = "Effacer !"
-    */
-    for (let i = 0; i < nbrRang; i++) {
+    for (let i = 1; i <= nbrRang; i++) {
         let ligne = document.createElement("tr");
-        ligne.id = "ligne" + i;
+        ligne.id = "ligne_" + i;
 
-        for (let j = 0; j < nbrCol; j++) {
+        for (let j = 1; j <= nbrCol; j++) {
             let cell = document.createElement("td");
-            cell.id = "cellule" + i + '-' + j;
+            cell.id = "cellule_" + i + '-' + j;
 
-            for (let l = 0; l < 1; l++) {
+            for (let l = 1; l <= 1; l++) {
                 let checkbox = document.createElement('input');
                 checkbox.type = "checkbox";
                 checkbox.className = "check";
 
-                checkbox.id = "check" + i + '_' + j + '_' + l;
+                checkbox.id = "check_" + i + '_' + j + '_' + l;
                 checkbox.setAttribute("onclick", "cache = this.id, testCheck()");
 
                 cell.appendChild(checkbox);
@@ -68,7 +61,6 @@ function creation_table() {
 
     blockInfo.appendChild(informationPlace);
     blockInfo.appendChild(informationReservation);
-    //blockInfo.appendChild(boutton);
 
     espace.appendChild(blockInfo);
     espace.appendChild(table);
@@ -86,5 +78,4 @@ function testCheck() {
     reservation = checked.length;
     informationPlace.innerHTML = "Place disponible : " + ((nbrCol * nbrRang) - reservation);
     informationReservation.innerHTML = "Place reservé : " + (reservation);
-    console.log(zone);
 }
